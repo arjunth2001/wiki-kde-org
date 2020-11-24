@@ -1,0 +1,30 @@
+- mentions: <!-- User symbol from Luis Prado, from thenounproject.com -->
+  image: assets/img/userbase.png
+  heading: User Base
+  link: https://userbase.kde.org
+  description: |
+    [Userbase.kde.org](https://userbase.kde.org) is the home for KDE users and enthusiasts, including power users and system administrators.
+
+    It provides information for end users on how to use and configure KDE applications.
+
+  buttonText: Go To User Base
+
+- mentions: <!-- None -->
+  image: assets/img/techbase.png
+  heading: Tech Base
+  link: https://techbase.kde.org
+  description: |
+    [Techbase.kde.org](https://techbase.kde.org) is primarily aimed at external developers.
+
+    It provides documentation and help for developers building on or extending KDE products in their own projects.
+  buttonText: Go To Tech Base
+
+- mentions: <!-- Community symbol from Rémy Médard, from thenounproject.com -->
+  image: assets/img/community.png
+  heading: Community
+  link: https://community.kde.org
+  description: |
+    [Community.kde.org](https://community.kde.org) is the working area for the KDE community.
+
+    It provides a place for sharing information within the community, including policies, guidelines and coordination.
+  buttonText: Go To Community Wiki

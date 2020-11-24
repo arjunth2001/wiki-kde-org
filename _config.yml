@@ -1,0 +1,128 @@
+# Site settings
+title: KDE Wikis
+email: kde-www@kde.org
+git: https://cgit.kde.org/websites/wiki-kde-org.git/
+description: >
+  KDE Wikis : The KDE wikis are a source of information and documentation for the KDE desktop, applications, teams, events and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "wiki.kde.org"
+twitter_username: kde_community
+github_username: kde
+use-kde-logo: true
+not_made_by_kde: true
+
+# Build settings
+markdown: kramdown
+theme: jekyll-kde-theme
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+collections:
+  changelogs:
+    output: true
+
+navigation:
+  top:
+    - title: Donate
+      url: https://www.kde.org/donate
+  bottom:
+    - name: Products
+      items:
+        - title: Plasma
+          url: https://kde.org/plasma-desktop
+
+        - title: KDE Applications
+          url: https://kde.org/applications/
+
+        - title: KDE Frameworks
+          url: https://kde.org/products/frameworks/
+
+        - title: Plasma Mobile
+          url: https://plasma-mobile.org/overview/
+
+        - title: KDE neon
+          url: https://neon.kde.org/
+
+        - title: WikiToLearn
+          url: https://wikitolearn.org/
+
+    - name: Develop
+      items:
+        - title: TechBase Wiki
+          url: https://techbase.kde.org/
+
+        - title: API Documentation
+          url: https://api.kde.org/
+
+        - title: Qt Documentation
+          url: https://doc.qt.io/
+
+        - title: Inqlude Documentation
+          url: https://inqlude.org/
+
+    - name: News &amp; Press
+      items:
+        - title: Announcements
+          url: https://kde.org/announcements/
+
+        - title: KDE.news
+          url: https://dot.kde.org/
+
+        - title: Planet KDE
+          url: https://planetkde.org/
+
+        - title: Screenshots
+          url: https://www.kde.org/screenshots
+
+        - title: Press Contact
+          url: https://www.kde.org/contact/
+
+    - name: Resources
+      items:
+        - title: Community Wiki
+          url: https://community.kde.org/Main_Page
+
+        - title: UserBase Wiki
+          url: https://userbase.kde.org/
+
+        - title: Miscellaneous Stuff
+          url: https://kde.org/stuff/
+
+        - title: Support
+          url: https://kde.org/support/
+
+        - title: International Websites
+          url: https://kde.org/support/international.php
+
+        - title: Download KDE Software
+          url: https://kde.org/download/
+
+        - title: Code of Conduct
+          url: https://kde.org/code-of-conduct/
+
+    - name: Destinations
+      items:
+        - title: KDE Store
+          url: https://store.kde.org/
+
+        - title: KDE e.V.
+          url: https://ev.kde.org/
+
+        - title: KDE Free Qt Foundation
+          url: https://www.kde.org/community/whatiskde/kdefreeqtfoundation.php
+
+        - title: KDE Timeline
+          url: https://timeline.kde.org/
+
+paginate: 3
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

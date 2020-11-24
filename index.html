@@ -1,0 +1,48 @@
+---
+layout: default
+css-include: /css/main.css
+sorted: 1
+---
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <br/>
+            <h1>Mission Statement</h1>
+            <p>
+                The KDE wikis are a source of information and documentation for the KDE desktop, applications, teams,
+                                                events and more. They are broadly classified into three categories described below
+            </p>
+
+            <p>
+                All our wikis support logging in using
+                <a href="https://identity.kde.org">KDE Identity</a>
+                accounts which need to be activated on
+                <a href="https://phabricator.kde.org">Phabricator</a>.
+                                                        Once you have logged in, you can modify and improve any article on any of these three wikis.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for item in site.data.boxes %}
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card h-100">
+                    {{item.mentions}}
+                    <div class="text-center">
+                        <img alt="" class="img-fluid" src="{{item.image}}"/>
+                    </div>
+                    <h3>{{item.heading}}</h3>
+
+                    {{item.description | markdownify}}
+
+                    <p class="text-center">
+                        <a class="btn btn-primary" href="{{item.link}}">
+                            <i class="icon-globe icon-white"></i>
+                            {{item.buttonText}}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
